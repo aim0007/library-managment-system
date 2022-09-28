@@ -1,0 +1,30 @@
+{% extends 'basic.html' %}
+{% load static %}
+{% block title %} Library Management System {% endblock %}
+{% block css %}
+{% endblock %}
+{% block body %}
+<div class="p-4 bg-light">
+    <div class="container-fluid py-3">
+      <h1 class="display-5 fw-bold">Welcome to Aman's Library Management System</h1>
+      <p class="col-md-8 fs-4">I have to build a library management system using Django where an admin can  <br>perform CRUD ( create, read, update and delete) operations like <br><br>● Add a Book <br>● Update an entry of a book <br>● Delete a book <br> ● Get all books
+</p>
+      <a href="/admin_registration/" class="btn btn-primary btn-lg">Admin Registration</a>
+    </div>
+    <br>
+    <div class="container">
+  <div class="row">
+
+    <div class="col-lg-6">
+      <img src="{% static 'admin.png' %}" width="50%" height="50%" alt=""><br><br>
+        <a class="btn btn-outline-primary btn-lg" style="text-align:center" href="/admin_login/">Admin</a>
+    </div>
+
+    <div class="col-lg-6">
+      <img src="{% static 'students.png' %}" width="50%" height="50%" alt=""><br><br>
+      <a class="btn btn-outline-primary btn-lg" href="/student_login/">Student</a>
+    </div>
+  </div>
+  </div>
+</div>
+{% endblock %}
